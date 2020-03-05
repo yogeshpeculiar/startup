@@ -1,17 +1,34 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Disp from './starters/Disp';
 import TableBookingDetails from './TableBookingDetails/tableBookingDetails';
-
+import logo from './img/logo.jpg';
 function App() {
- 
+//  document.body.style = 'background:#0A4C6D;';
 const arr=[{ReferenceNumber:'1234',GuestName:'x',NumberOfGuest:'Guest of 4',status:'active'},
-{ReferenceNumber:'12',GuestName:'x',NumberOfGuest:'Guest of 4',status:'active'}];
+{ReferenceNumber:'12',GuestName:'x',NumberOfGuest:'Guest of 4',status:'In progress'}];
 console.log(arr);
  
   return (
-    <div>
-  <table border="1">
+    
+      <div>
+    <div class="container-fluid">
+      <div name="row">
+      <nav class="navbar navbar-light " id="navBar">
+        
+          <div class="col-1">
+        <img src={logo} width="50" height="50"/>
+        </div>
+        <div class="col-3"></div>
+        <div class="col">
+          <h3 id="heading">Table Booking Details</h3>
+          </div>
+          </nav>
+        </div>
+      </div>
+      <div class="container">
+  <table class="table table-striped " id="t1">
     <tr>
       <th>ReferenceNumber</th>
       <th>GuestName</th>
@@ -23,7 +40,9 @@ console.log(arr);
         
     </table>    
     </div>
+    </div>
   );
+ 
 }
 
 export default App;

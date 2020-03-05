@@ -1,4 +1,15 @@
-.App {
+
+#navBar{
+  background-color:#EC0000;
+}
+
+body{
+  background-color:#0A4C6D;
+}
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +46,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
